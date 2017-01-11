@@ -1,0 +1,285 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Grid Layout
+- Link Styles
+- Footer
+- Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*Created by Luke Bennett 2016*/
+
+
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  font-family: 'Abel', sans-serif;
+  color: #F8AE65;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+label {
+  font-size: 1em;
+}
+
+h3 {
+  margin-left: 16px;
+}
+
+p,
+label,
+.contact,
+.skillset {
+  color: #3a3a3a;
+}
+
+
+/* Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main_nav {
+  background-color: #509497;
+  display: block;
+  padding-top: 0.5%;
+}
+
+.title {
+  margin: 5px auto;
+  text-align: center;
+}
+
+h1 a {
+  font-size: 2em;
+  text-decoration: none;
+  border: 3px solid;
+  color: #F8AE65;
+  text-transform: uppercase;
+  padding: 2px 10px 0 10px;
+  margin: 0;
+}
+
+ul.nav {
+  list-style-type: none;
+  text-align: center;
+  font-size: 2em;
+  padding: 0;
+  margin: 10px;
+}
+
+ul.nav li {
+  display: inline-block;
+  margin: 0 6% 0 6%;
+}
+
+.heading {
+  border: 1px solid black;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+
+/* Images & Media
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  max-width: 100%;
+}
+
+img.avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 400px;
+  margin-top: 20px;
+}
+
+
+/*Grid Layout
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.col {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin: 0 15px 15px 15px;
+}
+
+.three {
+  width: 30.6666666667%;
+}
+
+.four {
+  width: 33%
+}
+
+.seven {
+  margin-top: 5px;
+  width: 58.31%;
+}
+
+.tweleve {
+  width: 100%;
+  margin-left: 0;
+}
+
+.first {
+  margin-right: 0;
+}
+
+.last {
+  margin-left: 0;
+}
+
+
+/* Link Styles
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.active {
+  color: #F8AE65;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+a:hover {
+  color: #F8AE65;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.foot {
+  margin: 0;
+}
+
+ul.social {
+  list-style-type: none;
+  font-size: 2em;
+  padding: 0;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+ul.social li {
+  display: inline-block;
+  margin: 0 2%;
+}
+
+ul.social i {
+  color: #F8AE65;
+}
+
+.copyright {
+  color: #666;
+  text-align: center;
+  font-size: .7em;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media(max-device-width: 1024px) {
+  .tweleve {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 90%;
+    padding: 0;
+  }
+  .three {
+    width: 45%;
+  }
+  .four,
+  .seven {
+    width: 100%;
+  }
+  .three,
+  .first,
+  .last {
+    margin: 5% 2.5%
+  }
+  ul.nav li,
+  form {
+    font-size: 1.5em;
+  }
+  .title {
+    font-size: 4em;
+  }
+  #submit_button {
+    width: 25%;
+    height: 50px;
+    font-size: 1em;
+  }
+  h1 a {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  p,
+  label,
+  li {
+    font-size: 1.4em;
+  }
+  p,
+  label,
+  li, h3,
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+@media (max-device-width: 755px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+  .three {
+    width: 100%;
+  }
+  .col {
+    margin: 5% 0;
+  }
+  ul.nav li {
+    margin: 0 1%;
+    display: block;
+    font-size: 1.5em;
+  }
+  form, .social {
+    font-size: 1.5em;
+  }
+  #submit_button {
+    width: 225px;
+    height: 50px;
+    font-size: 1em;
+  }
+  h1 a {
+    font-size: 0.66em;
+  }
+}
